@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <main>
+        <h1>Accessible Photo Gallery</h1>
+        
+        <div id="image">
+            Hover over or focus on an image below to display here.
+        </div>
+        
+        <div class="gallery-container">
+            <figure class="preview-container">
+                <img class="preview" src="images/mountain.jpg" alt="Mountain landscape with snow-capped peaks" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>Mountain View</figcaption>
+            </figure>
+            
+            <figure class="preview-container">
+                <img class="preview" src="images/beach.jpg" alt="Sandy beach with clear blue water" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>Beach Sunset</figcaption>
+            </figure>
+            
+            <figure class="preview-container">
+                <img class="preview" src="images/forest.jpg" alt="Dense forest with tall trees and sunlight" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>Forest Path</figcaption>
+            </figure>
+            
+            <figure class="preview-container">
+                <img class="preview" src="images/city.jpg" alt="City skyline with tall buildings at night" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>City Skyline</figcaption>
+            </figure>
+            
+            <figure class="preview-container">
+                <img class="preview" src="images/lake.jpg" alt="Calm lake reflecting mountains and sky" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>Lake Reflection</figcaption>
+            </figure>
+            
+            <figure class="preview-container">
+                <img class="preview" src="images/desert.jpg" alt="Desert landscape with sand dunes at sunset" 
+                    onmouseover="upDate(this)" onmouseleave="unDo()" 
+                    onfocus="upDate(this)" onblur="unDo()">
+                <figcaption>Desert Sunset</figcaption>
+            </figure>
+        </div>
+        
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Use your mouse to hover over images or use the Tab key to navigate through them with your keyboard.</p>
+        </div>
+    </main>
+    
+    <script src="js/gallery.js"></script>
+</body>
+</html>
